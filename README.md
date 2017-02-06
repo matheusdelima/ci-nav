@@ -29,16 +29,16 @@ $config['nav_painel'] = array(
 And then call the menu
 
 ```
- $data->['main_menu'] = menu($items, $selected_item, $css_class);
-  ```
+$data->['main_menu'] = menu($items, $selected_item, $css_class);
+```
 
 Both the selected item and the css class are optional parameters, if not sent, the menu will be created with no highlighted item and it will not have a class added to the list.
 
 There is also a menup() function that creates a menu inside a paragraph tag, and includes a separator variable.
 
-    ```
-    $data->['footer_menu'] = menup($items, $selected_item, $css_class, $separator);
-    ```
+```
+$data->['footer_menu'] = menup($items, $selected_item, $css_class, $separator);
+```
 
 Requeriments
 ------------
@@ -50,6 +50,6 @@ Options
 
 You can create a navigation config file with all your arrays, and save it in 'application/config/', autoload the file and you'll have all menu items available for the application:
 
-   ```
-   $items = $config['nav_painel'];
-   ```
+ ```
+$items = $config['nav_painel'];
+ ```
