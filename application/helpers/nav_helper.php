@@ -38,7 +38,7 @@ if ( ! function_exists('menu'))
 
         foreach( $items as $item ) {
 
-            $current = ( $item['id'] == 'users' ) ? ' class="active"' : '';
+            $current = ( $item['id'] == $sel ) ? ' class="active"' : '';
 
             $menu .= '<li' . $current . '>';
 
